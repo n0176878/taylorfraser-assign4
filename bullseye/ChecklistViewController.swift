@@ -28,50 +28,55 @@
 
 import UIKit
 
-protocol ChecklistViewControllerDelegate {
+protocol ChecklistViewControllerDelegate: class {
 //    func checklistViewControllerDidCancel(_ controller: ChecklistViewController);
     func checklistViewController(_ controller: ChecklistViewController, didFinishEditing items: [ChecklistItem])
 }
 
 class ChecklistViewController: UITableViewController {
-    var items = [ChecklistItem]()
-
+    
+var items = [ChecklistItem]()
+    var itemlist:[String] = [""]
     
      weak var delegate: ChecklistViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let item1 = ChecklistItem()
-        item1.text = "Additon (+)"
-        items.append(item1)
-        
-        let item2 = ChecklistItem()
-        item2.text = "Subtraction (-)"
-        items.append(item2)
-        
-        let item3 = ChecklistItem()
-        item3.text = "Multiplication (*)"
-        items.append(item3)
-        
-        let item4 = ChecklistItem()
-        item4.text = "Division (/)"
-        items.append(item4)
+    
+            let item1 = ChecklistItem()
+            item1.text = "Addition (+)"
+            item1.symbol = "+"
+            item1.checked = true
+            items.append(item1)
+            
+            let item2 = ChecklistItem()
+            item2.text = "Subtraction (-)"
+            item2.symbol = "-"
+            item2.checked = true
+            items.append(item2)
+            
+            let item3 = ChecklistItem()
+            item3.text = "Multiplication (*)"
+            item3.symbol = "*"
+            item3.checked = true
+            items.append(item3)
+            
+            let item4 = ChecklistItem()
+            item4.text = "Division (/)"
+            item4.symbol = "/"
+            item4.checked = true
+            items.append(item4)
         
     }
-    
-    func checklistState(){
-        
-    }
-    
-    // MARK:- Actions
-//    @IBAction func cancel() {
-//        delegate?.checklistViewControllerDidCancel(self)
-//    }
+
     
     @IBAction func done() {
-        delegate?.checklistViewController(self, didFinishEditing: items)
-        
+        for item in items{
+            if(item.checked == true)
+            {
+                delegate?.checklistViewController(self, didFinishEditing: items)
+            }
+        }
     }
     
     func configureCheckmark(for cell: UITableViewCell, with item: ChecklistItem) {

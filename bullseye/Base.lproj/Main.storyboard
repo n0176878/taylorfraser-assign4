@@ -168,7 +168,7 @@
                     <navigationItem key="navigationItem" title="Equation Invasion" id="ztX-HB-LmR">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="CIb-AI-Fqx">
                             <connections>
-                                <segue destination="SNs-ek-2Nn" kind="show" id="WBP-mc-YUh"/>
+                                <segue destination="SNs-ek-2Nn" kind="show" identifier="table" id="WBP-mc-YUh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

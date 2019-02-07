@@ -10,12 +10,21 @@ import UIKit
 
 class ViewController: UIViewController, ChecklistViewControllerDelegate {
     
-    func checklistViewControllerDidCancel(_ controller: ChecklistViewController) {
-         navigationController?.popViewController(animated: true)
-    }
+//    func checklistViewControllerDidCancel(_ controller: ChecklistViewController) {
+//         navigationController?.popViewController(animated: true)
+//    }
     
     func checklistViewController(_ controller: ChecklistViewController, didFinishEditing items: [ChecklistItem]) {
+        var selectedOperators: [String] = []
+        for item in items {
+            
+        if (item.checked == true)
+        {
+            selectedOperators.append(item.symbol)
+        }
+    }
         
+        Quiz.selectedOperators = selectedOperators
         navigationController?.popViewController(animated: true)
     }
     
@@ -23,6 +32,7 @@ class ViewController: UIViewController, ChecklistViewControllerDelegate {
     var round = 1
     var roundOneChecker: Bool = false
     let maxLevel = 10
+    
     
     
     @IBOutlet weak var textfield: UITextField!
@@ -57,17 +67,18 @@ class ViewController: UIViewController, ChecklistViewControllerDelegate {
         if intText == Quiz.answer
         {
          roundOneChecker = true
-         title = "Correct Answer!"
-         message = "You have completed \(round)/\(Quiz.level + 2) rounds"
+         title = "Equation Invasion"
+            
+         message = "CORRECT!\nYou are on round \(round) \\ \(Quiz.level + 2)\nPress OK for next question"
             if (round == Quiz.level + 2)
             {
-                title = "Correct Answer! \n You have unlocked level \(Quiz.level + 1)"
+                
+                message = "Congrats! You have unlocked level \(Quiz.level + 1)"
             }
         }
         else if (intText != Quiz.answer)
         {
-            title = "Incorrect Answer"
-            message = "Please try again!"
+            message = "Incorrect Answer\nPlease try again!"
         }
     }
         else if (Quiz.level == maxLevel) {
@@ -76,28 +87,30 @@ class ViewController: UIViewController, ChecklistViewControllerDelegate {
         }
         else
         {
-            title = "Invalid Input"
-            message = "Enter a valid number"
+            message = "Invalid Input\n Enter a valid number"
         }
     }
-        if(round != Quiz.roundRequired){
-    let alert2 = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
-        let action2 = UIAlertAction(title: "OK", style: .default, handler: { _ in
+        if(round != Quiz.roundRequired)
+        {
+            
+            let alert2 = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            let action2 = UIAlertAction(title: "OK", style: .default, handler: { _ in
             self.startNewRound()
-        })
-        alert2.addAction(action2)
+            })
+            alert2.addAction(action2)
         
-        present(alert2, animated: true, completion: nil)
+            present(alert2, animated: true, completion: nil)
         }
-        else {
-    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    let action = UIAlertAction(title: "OK", style: .default, handler: { _ in
-        self.startNewRound()
-    })
-        alert.addAction(action)
+        else
+        {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: { _ in
+                self.startNewRound()
+            })
+            alert.addAction(action)
         
-        present(alert, animated: true, completion: nil)
-    }
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func startOver() {
@@ -115,8 +128,12 @@ class ViewController: UIViewController, ChecklistViewControllerDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as! ChecklistViewController
-        controller.delegate = self
+        if(segue.identifier == "table")
+        {
+            let controller = segue.destination as! ChecklistViewController
+            controller.delegate = self
+            //controller.items = Quiz.selectedOperators
+        }
     }
     
      func startNewRound() {
@@ -143,7 +160,7 @@ class ViewController: UIViewController, ChecklistViewControllerDelegate {
         roundLabel.text = String(round)
         leftOperandLabel.text = String(Quiz.leftOperand)
         rightOperandLabel.text = String(Quiz.rightOperand)
-        theOperatorLabel.text = Quiz.theOperator
+        theOperatorLabel.text = (Quiz.theOperator)
         textfield.text = ""
     }
     
@@ -163,19 +180,21 @@ class ViewController: UIViewController, ChecklistViewControllerDelegate {
 }
 
 class Quiz {
-    
+    //selectedOperators.append(ChecklistItem(item.name, item.symbol, checked))
     static var roundRequired = level + 2
     static var level = 1
     static var difficultyLevel = 1
     static var leftOperand = (Int.random(in: 0...10) * difficultyLevel)
     static var rightOperand = (Int.random(in: 0...10) * difficultyLevel)
     static var answer: Int?
-    static var theOperator = ["+","-","*","/"].randomElement()
+    static var selectedOperators: [String] = ["+","-","*","/"]
+    static var theOperator = selectedOperators.randomElement()
+    
     
     static func getEquation() {
         leftOperand = (Int.random(in: 0...10) * difficultyLevel)
         rightOperand = (Int.random(in: 0...10) * difficultyLevel)
-        theOperator = ["+","-","*","/"].randomElement()
+        theOperator = selectedOperators.randomElement()
         
         calculateAnswer()
     }
