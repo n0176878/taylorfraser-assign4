@@ -16,7 +16,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let url = Bundle.main.url(forResource: "BullsEye",
+        if let url = Bundle.main.url(forResource: "taylor",
                                      withExtension: "html") {
             let request = URLRequest(url: url)
             webView.load(request)

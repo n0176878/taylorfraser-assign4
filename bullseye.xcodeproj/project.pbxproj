@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3214467521F705DA006913D4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3214467421F705DA006913D4 /* AboutViewController.swift */; };
-		327BB2B1220ABB0600D8D383 /* spaceship-309153_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 327BB2B0220ABB0600D8D383 /* spaceship-309153_960_720.png */; };
-		327BB2B3220AC0FC00D8D383 /* depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327BB2B2220AC0FB00D8D383 /* depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg */; };
-		327BB2B5220AC22600D8D383 /* depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327BB2B4220AC22600D8D383 /* depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg */; };
 		327C2296220155FB00E0D9F1 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C2295220155FB00E0D9F1 /* ChecklistViewController.swift */; };
 		327C22982201563F00E0D9F1 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C22972201563F00E0D9F1 /* ChecklistItem.swift */; };
-		327C229C22024E2C00E0D9F1 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 327C229B22024E2C00E0D9F1 /* BullsEye.html */; };
+		32ECFFAC221518C30075A421 /* taylor.html in Resources */ = {isa = PBXBuildFile; fileRef = 32ECFFAB221518C30075A421 /* taylor.html */; };
 		32F1C8FB21E6B6C0004E99E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1C8FA21E6B6C0004E99E6 /* AppDelegate.swift */; };
 		32F1C8FD21E6B6C0004E99E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1C8FC21E6B6C0004E99E6 /* ViewController.swift */; };
 		32F1C90021E6B6C0004E99E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F1C8FE21E6B6C0004E99E6 /* Main.storyboard */; };
@@ -23,12 +20,9 @@
 
 /* Begin PBXFileReference section */
 		3214467421F705DA006913D4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		327BB2B0220ABB0600D8D383 /* spaceship-309153_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spaceship-309153_960_720.png"; path = "../../../../../spaceship-309153_960_720.png"; sourceTree = "<group>"; };
-		327BB2B2220AC0FB00D8D383 /* depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg"; path = "../../../../../depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg"; sourceTree = "<group>"; };
-		327BB2B4220AC22600D8D383 /* depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg"; path = "../../../../../depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg"; sourceTree = "<group>"; };
 		327C2295220155FB00E0D9F1 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		327C22972201563F00E0D9F1 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		327C229B22024E2C00E0D9F1 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = "../../../textbook/iOS_Apprentice_v7.0/getting-started/Resources/BullsEye.html"; sourceTree = "<group>"; };
+		32ECFFAB221518C30075A421 /* taylor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = taylor.html; sourceTree = "<group>"; };
 		32F1C8F721E6B6C0004E99E6 /* bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F1C8FA21E6B6C0004E99E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F1C8FC21E6B6C0004E99E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +46,7 @@
 		32F1C8EE21E6B6C0004E99E6 = {
 			isa = PBXGroup;
 			children = (
-				327C229B22024E2C00E0D9F1 /* BullsEye.html */,
+				32ECFFAB221518C30075A421 /* taylor.html */,
 				32F1C8F921E6B6C0004E99E6 /* bullseye */,
 				32F1C8F821E6B6C0004E99E6 /* Products */,
 			);
@@ -73,9 +67,6 @@
 				32F1C8FC21E6B6C0004E99E6 /* ViewController.swift */,
 				32F1C8FE21E6B6C0004E99E6 /* Main.storyboard */,
 				32F1C90121E6B6C1004E99E6 /* Assets.xcassets */,
-				327BB2B4220AC22600D8D383 /* depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg */,
-				327BB2B2220AC0FB00D8D383 /* depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg */,
-				327BB2B0220ABB0600D8D383 /* spaceship-309153_960_720.png */,
 				32F1C90321E6B6C1004E99E6 /* LaunchScreen.storyboard */,
 				32F1C90621E6B6C1004E99E6 /* Info.plist */,
 				3214467421F705DA006913D4 /* AboutViewController.swift */,
@@ -143,13 +134,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327BB2B5220AC22600D8D383 /* depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg in Resources */,
-				327BB2B3220AC0FC00D8D383 /* depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg in Resources */,
+				32ECFFAC221518C30075A421 /* taylor.html in Resources */,
 				32F1C90521E6B6C1004E99E6 /* LaunchScreen.storyboard in Resources */,
-				327C229C22024E2C00E0D9F1 /* BullsEye.html in Resources */,
 				32F1C90221E6B6C1004E99E6 /* Assets.xcassets in Resources */,
 				32F1C90021E6B6C0004E99E6 /* Main.storyboard in Resources */,
-				327BB2B1220ABB0600D8D383 /* spaceship-309153_960_720.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +298,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CD2753G74;
 				INFOPLIST_FILE = bullseye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -318,6 +308,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.taylorfraser.bullseye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CD2753G74;
 				INFOPLIST_FILE = bullseye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.taylorfraser.bullseye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

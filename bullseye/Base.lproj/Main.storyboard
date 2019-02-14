@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-CD-oAu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-CD-oAu">
                                 <rect key="frame" x="0.0" y="0.0" width="908" height="527"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-iG-wDV">
@@ -194,7 +194,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ElE-7P-gKg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="ElE-7P-gKg">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="342"/>
                             </imageView>
                             <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vd-Ix-IUG">
@@ -345,7 +345,7 @@
         <image name="InfoButton" width="10" height="22"/>
         <image name="SmallButton" width="32" height="32"/>
         <image name="StartOverIcon" width="20" height="20"/>
-        <image name="depositphotos_196972396-stock-video-planet-cartoon-space-animation-background.jpg" width="608" height="342"/>
-        <image name="depositphotos_196972438-stock-video-planet-cartoon-space-animation-background.jpg" width="608" height="342"/>
+        <image name="background2" width="3840" height="2160"/>
+        <image name="background3" width="608" height="342"/>
     </resources>
 </document>

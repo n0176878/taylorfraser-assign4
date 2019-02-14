@@ -18,34 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="0x6-Qe-bew">
+                                <rect key="frame" x="-17" y="-27" width="948" height="474"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equation Invasion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T6-GI-ktA">
-                                <rect key="frame" x="295.5" y="251.5" width="305" height="49.5"/>
+                                <rect key="frame" x="295.5" y="163" width="305" height="49.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TDF Mobile Apps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-PE-gfq">
-                                <rect key="frame" x="349.5" y="308.5" width="197.5" height="32.5"/>
+                                <rect key="frame" x="349.5" y="220" width="197.5" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceship-309153_960_720.png" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-wt-ap6">
-                                <rect key="frame" x="261.5" y="30" width="373" height="188"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="188" id="YDG-Gb-m0H"/>
-                                    <constraint firstAttribute="width" constant="373" id="hr3-Yd-tiA"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2T6-GI-ktA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kih-7z-C4O"/>
-                            <constraint firstItem="2T6-GI-ktA" firstAttribute="top" secondItem="xdO-wt-ap6" secondAttribute="bottom" constant="33.5" id="OUs-f8-mlL"/>
-                            <constraint firstItem="7uF-PE-gfq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SHW-Ot-iOk"/>
-                            <constraint firstItem="xdO-wt-ap6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SkW-vn-2hA"/>
-                            <constraint firstItem="2T6-GI-ktA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="69.25" id="XPS-x4-B5f"/>
-                            <constraint firstItem="7uF-PE-gfq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="117.75" id="YaO-ra-yoH"/>
+                            <constraint firstItem="2T6-GI-ktA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-19.25" id="2LE-Rd-lDN"/>
+                            <constraint firstItem="7uF-PE-gfq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RDt-aR-mGC"/>
+                            <constraint firstItem="2T6-GI-ktA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ir3-7C-sJn"/>
+                            <constraint firstItem="7uF-PE-gfq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="29.25" id="mlI-xX-Cka"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,6 +51,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="spaceship-309153_960_720.png" width="960" height="480"/>
+        <image name="background3" width="608" height="342"/>
     </resources>
 </document>
